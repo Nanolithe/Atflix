@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		026D99C1299ED6D300AB2D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C0299ED6D300AB2D56 /* AppDelegate.swift */; };
 		026D99C3299ED6D300AB2D56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C2299ED6D300AB2D56 /* SceneDelegate.swift */; };
-		026D99C5299ED6D300AB2D56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C4299ED6D300AB2D56 /* ViewController.swift */; };
+		026D99C5299ED6D300AB2D56 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C4299ED6D300AB2D56 /* MoviesViewController.swift */; };
 		026D99C8299ED6D300AB2D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026D99C6299ED6D300AB2D56 /* Main.storyboard */; };
 		026D99CA299ED6D400AB2D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026D99C9299ED6D400AB2D56 /* Assets.xcassets */; };
 		026D99CD299ED6D400AB2D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026D99CB299ED6D400AB2D56 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,9 @@
 		026D99E2299ED6D400AB2D56 /* AflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99E1299ED6D400AB2D56 /* AflixUITests.swift */; };
 		026D99E4299ED6D500AB2D56 /* AflixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99E3299ED6D500AB2D56 /* AflixUITestsLaunchTests.swift */; };
 		026D99F1299ED7CD00AB2D56 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99F0299ED7CD00AB2D56 /* Movies.swift */; };
+		0271FD2F299F409400497DFF /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 0271FD2E299F409400497DFF /* Nuke */; };
+		0271FD31299F579C00497DFF /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FD30299F579C00497DFF /* MovieCell.swift */; };
+		0271FD35299F69E900497DFF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271FD34299F69E900497DFF /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		026D99BD299ED6D300AB2D56 /* Aflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026D99C0299ED6D300AB2D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026D99C2299ED6D300AB2D56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		026D99C4299ED6D300AB2D56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		026D99C4299ED6D300AB2D56 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		026D99C7299ED6D300AB2D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		026D99C9299ED6D400AB2D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026D99CC299ED6D400AB2D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		026D99E1299ED6D400AB2D56 /* AflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AflixUITests.swift; sourceTree = "<group>"; };
 		026D99E3299ED6D500AB2D56 /* AflixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AflixUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		026D99F0299ED7CD00AB2D56 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		0271FD30299F579C00497DFF /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		0271FD34299F69E900497DFF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0271FD2F299F409400497DFF /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,11 +110,13 @@
 				026D99C0299ED6D300AB2D56 /* AppDelegate.swift */,
 				026D99F0299ED7CD00AB2D56 /* Movies.swift */,
 				026D99C2299ED6D300AB2D56 /* SceneDelegate.swift */,
-				026D99C4299ED6D300AB2D56 /* ViewController.swift */,
+				0271FD34299F69E900497DFF /* DetailViewController.swift */,
+				026D99C4299ED6D300AB2D56 /* MoviesViewController.swift */,
 				026D99C6299ED6D300AB2D56 /* Main.storyboard */,
 				026D99C9299ED6D400AB2D56 /* Assets.xcassets */,
 				026D99CB299ED6D400AB2D56 /* LaunchScreen.storyboard */,
 				026D99CE299ED6D400AB2D56 /* Info.plist */,
+				0271FD30299F579C00497DFF /* MovieCell.swift */,
 			);
 			path = Aflix;
 			sourceTree = "<group>";
@@ -146,6 +154,9 @@
 			dependencies = (
 			);
 			name = Aflix;
+			packageProductDependencies = (
+				0271FD2E299F409400497DFF /* Nuke */,
+			);
 			productName = Aflix;
 			productReference = 026D99BD299ED6D300AB2D56 /* Aflix.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 026D99B4299ED6D300AB2D56;
+			packageReferences = (
+				0271FD2D299F409400497DFF /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 026D99BE299ED6D300AB2D56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				026D99C5299ED6D300AB2D56 /* ViewController.swift in Sources */,
+				026D99C5299ED6D300AB2D56 /* MoviesViewController.swift in Sources */,
 				026D99C1299ED6D300AB2D56 /* AppDelegate.swift in Sources */,
 				026D99F1299ED7CD00AB2D56 /* Movies.swift in Sources */,
+				0271FD35299F69E900497DFF /* DetailViewController.swift in Sources */,
+				0271FD31299F579C00497DFF /* MovieCell.swift in Sources */,
 				026D99C3299ED6D300AB2D56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0271FD2D299F409400497DFF /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0271FD2E299F409400497DFF /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0271FD2D299F409400497DFF /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 026D99B5299ED6D300AB2D56 /* Project object */;
 }
