@@ -17,9 +17,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
     // TODO: Pt 1 - Add table view outlet
     @IBOutlet var tableView: UITableView!
     
+    //self.tableView.register(UITableViewCell.self, forCellWithReuseIdentifier: "cell")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        // self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         // TODO: Pt 1 - Set tracks property with mock tracks array
         movies = Movies.mockMovies
         print(movies)
