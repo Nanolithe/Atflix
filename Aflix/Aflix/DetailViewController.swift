@@ -24,16 +24,21 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    let url = URL(string: "https://api.themoviedb.org/3/configuration?api_key=66b3b8db2dcfbf7e4052b8ed947ca590")!
+    let baseURL = "https://image.tmdb.org/t/p/original"
+
 
         // TODO: Pt 1 - Configure the UI elements with the passed in track
         // Load the image located at the `artworkUrl100` URL and set it on the image view.
-        Nuke.loadImage(with: movie.poster_path, into: movieImageView)
         
-        movieTitleLabel.text = movie.title
-        movieVoteAvgLabel.text = movie.vote_average
-        movieVoteCountLabel.text = movie.vote_count
-        moviePopularityLabel.text = movie.popularity
+        Nuke.loadImage(with:  URL(string: baseURL + movie.poster_path)!, into: movieImageView)
+        
+        movieTitleLabel.text = movie.original_title
+        movieVoteAvgLabel.text =  "\(movie.vote_average) Vote Average"
+        movieVoteCountLabel.text =  "\(movie.vote_count) Votes"
+        moviePopularityLabel.text =  "\(movie.popularity) Popularity"
         movieOverviewTextView.text = movie.overview
+        
 
 }
 }

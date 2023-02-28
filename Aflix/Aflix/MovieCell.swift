@@ -9,7 +9,8 @@ import UIKit
 import Nuke
 
 class MovieCell: UITableViewCell {
-
+    let url = URL(string: "https://api.themoviedb.org/3/configuration?api_key=66b3b8db2dcfbf7e4052b8ed947ca590")!
+    let baseURL = "https://image.tmdb.org/t/p/original"
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,13 +27,13 @@ class MovieCell: UITableViewCell {
     @IBOutlet var movieTitleLabel: UILabel!
     @IBOutlet var movieOverviewLabel: UITextView!
     
-        // Configures the cell's UI for the given track.
+        // Configures the cell's UI for the given Movie.
         func configure(with movie: Movies) {
-            movieTitleLabel.text = movie.title
+            movieTitleLabel.text = movie.original_title
             movieOverviewLabel.text = movie.overview
 
             // Load image async via Nuke library image loading helper method
-            Nuke.loadImage(with: movie.poster_path, into: movieImageView)
+            Nuke.loadImage(with:URL(string:baseURL+movie.poster_path)!, into: movieImageView)
         }
     }
 

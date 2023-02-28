@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02023A2529A80E9B0001495F /* PostersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02023A2429A80E9B0001495F /* PostersViewController.swift */; };
+		02023A2729A810AF0001495F /* Posters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02023A2629A810AF0001495F /* Posters.swift */; };
+		02023A2929A8151E0001495F /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02023A2829A8151E0001495F /* PosterCell.swift */; };
 		026D99C1299ED6D300AB2D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C0299ED6D300AB2D56 /* AppDelegate.swift */; };
 		026D99C3299ED6D300AB2D56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C2299ED6D300AB2D56 /* SceneDelegate.swift */; };
 		026D99C5299ED6D300AB2D56 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D99C4299ED6D300AB2D56 /* MoviesViewController.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02023A2429A80E9B0001495F /* PostersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostersViewController.swift; sourceTree = "<group>"; };
+		02023A2629A810AF0001495F /* Posters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posters.swift; sourceTree = "<group>"; };
+		02023A2829A8151E0001495F /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
 		026D99BD299ED6D300AB2D56 /* Aflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026D99C0299ED6D300AB2D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026D99C2299ED6D300AB2D56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02023A2A29A817CA0001495F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				026D99F0299ED7CD00AB2D56 /* Movies.swift */,
+				02023A2629A810AF0001495F /* Posters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		026D99B4299ED6D300AB2D56 = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +122,15 @@
 		026D99BF299ED6D300AB2D56 /* Aflix */ = {
 			isa = PBXGroup;
 			children = (
+				02023A2A29A817CA0001495F /* Models */,
 				026D99C0299ED6D300AB2D56 /* AppDelegate.swift */,
-				026D99F0299ED7CD00AB2D56 /* Movies.swift */,
 				026D99C2299ED6D300AB2D56 /* SceneDelegate.swift */,
 				0271FD30299F579C00497DFF /* MovieCell.swift */,
+				02023A2829A8151E0001495F /* PosterCell.swift */,
 				0271FD34299F69E900497DFF /* DetailViewController.swift */,
 				026D99C4299ED6D300AB2D56 /* MoviesViewController.swift */,
 				026D99C6299ED6D300AB2D56 /* Main.storyboard */,
+				02023A2429A80E9B0001495F /* PostersViewController.swift */,
 				026D99C9299ED6D400AB2D56 /* Assets.xcassets */,
 				026D99CB299ED6D400AB2D56 /* LaunchScreen.storyboard */,
 				026D99CE299ED6D400AB2D56 /* Info.plist */,
@@ -275,11 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02023A2729A810AF0001495F /* Posters.swift in Sources */,
 				026D99C5299ED6D300AB2D56 /* MoviesViewController.swift in Sources */,
+				02023A2929A8151E0001495F /* PosterCell.swift in Sources */,
 				026D99C1299ED6D300AB2D56 /* AppDelegate.swift in Sources */,
 				026D99F1299ED7CD00AB2D56 /* Movies.swift in Sources */,
 				0271FD35299F69E900497DFF /* DetailViewController.swift in Sources */,
 				0271FD31299F579C00497DFF /* MovieCell.swift in Sources */,
+				02023A2529A80E9B0001495F /* PostersViewController.swift in Sources */,
 				026D99C3299ED6D300AB2D56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
